@@ -1,3 +1,4 @@
+/* ____________глобальні стилі_____________ */
 :root{
     --primary-text-color: #757575;
     --secondary-text-color: #FFFFFF;
@@ -14,38 +15,91 @@ body{
 address{
     font-style: normal;
 }
+
+h1,h2,h3,h4,h5,h6,ul,p{
+    margin: 0;
+}
+
 .list{
     list-style: none;
 }
 .link{
     text-decoration: none;
 }
-/* section */
+
+/* контейнер */
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* ________________секція______________________ */
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-title{
 color: var(--title-text-color);
 font-size: 36px;
 line-height: 1.16;
 }
-/* hero */
-.hero-title{
-color: var(--secondary-text-color);
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-}
-.button{
-color: var(--secondary-text-color);
-background-color:var(--accent-color);
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.06em;
 
+/* ________________хедер_________________ */
+.der{
+    display: flex;
 }
-/* footer */
+.site-nav{
+display: flex;
+}
+.site-contacts{
+    display: flex;
+}
+
+.logo{
+    color: #000000;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    }
+    .logo-web{
+        color: var(--accent-color);
+    }
+
+    .site-nav .link.current{
+        color: var(--accent-color);
+    }
+    .site-nav .link{
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    }
+    .site-nav .link:hover,
+    .site-nav .link:focus{
+        color: var(--accent-color);
+    }
+    
+    .site-contacts .link{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    }
+    .site-contacts .link:hover,
+    .site-contacts .link:focus{
+        color: var(--accent-color);
+    }
+    .bgc{
+        background-color: #2F303A;
+    }
+
+    /* ___________________футер__________________________ */
 .logo-footer{
     color: var(--secondary-text-color);
     font-family: 'Raleway';
@@ -69,69 +123,33 @@ color: rgba(255, 255, 255, 0.6);
 .footer-contacts:focus{
     color: var(--accent-color);
 }
-/* our projekt button */
-.filter-button{
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-color: var(--title-text-color);
-background-color: #F5F4FA;
-cursor: pointer;
-}
-.filter-button:hover,
-.filter-button:focus{
-    color: var(--secondary-text-color);
-    background-color:var(--accent-color);
-}
-/* galery */
-.galery .title{
-font-size: 18px;
-line-height: 2;
+
+/* __________________герой_________________________ */
+.hero-title{
+color: var(--secondary-text-color);
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
 letter-spacing: 0.06em;
-color: var(--title-text-color);
+text-transform: uppercase;
 }
-.galery .text{
+.button{
+    border-radius: 4px;
+    padding: 10px 32px;
+color: var(--secondary-text-color);
+background-color:var(--accent-color);
+font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
+letter-spacing: 0.06em;
 }
-/* HEADER */
-.logo{
-color: #000000;
-font-family: 'Raleway';
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
+
+/* ____________________наші переваги___________________ */
+.list .title{
+    margin: 0;
 }
-.logo-web{
-    color: var(--accent-color);
-}
-.site-nav .link.current{
-    color: var(--accent-color);
-}
-.site-nav .link{
-color: var(--title-text-color);
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.02em;
-}
-.site-nav .link:hover,
-.site-nav .link:focus{
-    color: var(--accent-color);
-}
-.site-contacts .link{
-color: var(--primary-text-color);
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.02em;
-}
-.site-contacts .link:hover,
-.site-contacts .link:focus{
-    color: var(--accent-color);
-}
-.bgc{
-    background-color: #2F303A;
-}
-/* our adv */
+
 .section .title{
 font-size: 14px;
 line-height: 1.14;
@@ -141,7 +159,8 @@ color: var(--title-text-color);
 .section .text{
 line-height: 1.71;
 }
-/* team */
+
+/* _____________________наша команда________________________ */
 .section .team-title{
 font-weight: 500;
 font-size: 16px;
@@ -152,3 +171,33 @@ color: var(--title-text-color);
 font-size: 16px;
 line-height: 1.18;
 }
+
+/* _____________кнопки "наші проекти"_______________________ */
+.filter-button{
+    border-radius: 4px;
+    padding: 6px 25px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+    }
+    .filter-button:hover,
+    .filter-button:focus{
+        color: var(--secondary-text-color);
+        background-color:var(--accent-color);
+    }
+
+/* _____________________галерея_____________________________ */
+.galery .title{
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+    }
+    .galery .text{
+    font-size: 16px;
+    line-height: 1.88;
+    }
+    
