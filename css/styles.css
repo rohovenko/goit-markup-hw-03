@@ -27,6 +27,11 @@ h1,h2,h3,h4,h5,h6,ul,p{
 .link{
     text-decoration: none;
 }
+.img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 /* контейнер */
 .container{
@@ -41,7 +46,6 @@ h1,h2,h3,h4,h5,h6,ul,p{
 /* ________________секція______________________ */
 .section{
     padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .section-title{
@@ -54,17 +58,16 @@ text-align: center;
 /* ________________хедер_________________ */
 .header{
     border-bottom: 1px solid #ECECEC;
+    padding: 24px 0;
 }
 .header-flex{
     display: flex;
     align-items: center;
-    margin-top: 24px;
-    margin-bottom: 25px;
+
 
 }
 .site-nav{
     display: flex;
-    margin-left: 93px;
 }
 .site-nav .item + .item{
     margin-left: 50px;
@@ -79,6 +82,7 @@ text-align: center;
 }
 
 .logo{
+    margin-right: 93px;
     color: #000000;
     font-family: 'Raleway';
     font-weight: 700;
@@ -115,16 +119,20 @@ text-align: center;
     }
     .bgc{
         background-color: #2F303A;
+        padding: 200px;
     }
 
     /* ___________________футер__________________________ */
-.addres{
-    margin-top: 20px;
-    padding-bottom: 60px;
+.footer{
+    background-color: #2F303A;
+    padding: 60px 0;
 }
+    
+    
     .logo-footer{
         display: block;
-    padding-top: 60px;
+        margin-bottom: 20px;
+    
 
     color: var(--secondary-text-color);
     font-family: 'Raleway';
@@ -151,6 +159,9 @@ color: rgba(255, 255, 255, 0.6);
 
 /* __________________герой_________________________ */
 .hero-title{
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 color: var(--secondary-text-color);
 font-weight: 900;
 font-size: 44px;
@@ -178,6 +189,9 @@ letter-spacing: 0.06em;
 /* ____________________наші переваги___________________ */
 .advantages-flex{
     display: flex;
+}
+.advantages-flex .item{
+    width: 270px;
 }
 .advantages-flex .item + .item{
     margin-left: 30px;
@@ -209,9 +223,19 @@ line-height: 1.71;
 
 
 /* _____________________наша команда________________________ */
+.team{
+    background-color: #F5F4FA;
+}
 .team-flex{
     display: flex;
     margin-top: 50px;
+}
+.team-flex .item{
+    margin-bottom: 30px;
+
+    background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .team-flex .item + .item{
     margin-left: 30px;
@@ -233,6 +257,9 @@ line-height: 1.18;
 }
 
 /* _____________кнопки "наші проекти"_______________________ */
+.section-project{
+    padding: 94px 0;
+}
 .button-flex{
     display: flex;
     justify-content: center;
